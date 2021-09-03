@@ -30,7 +30,7 @@ no = "❌"
 yes = "✅"
 # Central object is not used its Acknowledged
 tordb = TorToolkitDB()
-header = '<b>TorToolKitX by <a href="https://github.com/XcodersHub/TorToolkitX">XcodersHub</a></b>\n<u>ADMIN SETTINGS MENU - Beta v1</u>'
+header = '<b>Imager MegaTorToolKit</u>'
 
 
 async def handle_setting_callback(e):
@@ -476,7 +476,7 @@ async def handle_settings(e, edit=False, msg="", submenu=None, session_id=None):
         )
         await get_bool_variable(
             "EXPRESS_UPLOAD",
-            "Enable Express Upload.(read README on github for more info)(Turn off if errored)",
+            "Enable Express Upload.(Turn off if errored)",
             menu,
             "expressupload",
             session_id,
