@@ -643,7 +643,8 @@ async def set_password_zip(message):
 
 
 async def start_handler(event):
-    msg = "Hello This is TorToolkitX running on heroku an instance of <a href='https://github.com/XcodersHub/TorToolkitX'>This Repo</a>. Try the repo for yourself and dont forget to put a STAR and fork."
+    msg = "Hello This is Imager MegaTorToolkitX running on heroku.
+    "
     await event.reply(msg, parse_mode="html")
 
 
@@ -811,36 +812,12 @@ async def about_me(message):
     diff = Human_Format.human_readable_timedelta(diff)
 
     msg = (
-        "<b>Name</b>: <code>TorToolkitX-Heroku</code>\n"
+        "<b>Name</b>: <code>Imager MegaTorToolkitX</code>\n"
         f"<b>Version</b>: <code>{__version__}</code>\n"
         f"<b>Telethon Version</b>: {telever}\n"
         f"<b>Pyrogram Version</b>: {pyrover}\n"
-        "<b>Created By</b>: @Yaknight\n\n"
-        "<b>Modified By</b>: @XcodersHub\n\n"
         "<u>Currents Configs:-</u>\n\n"
         f"<b>Bot Uptime:-</b> {diff}\n"
-        "<b>Torrent Download Engine:-</b> <code>qBittorrent [4.3.0 fix active]</code> \n"
-        "<b>Direct Link Download Engine:-</b> <code>aria2</code> \n"
-        "<b>Upload Engine:-</b> <code>RCLONE</code> \n"
-        "<b>Youtube Download Engine:-</b> <code>yt-dlp</code>\n"
-        f"<b>Rclone config:- </b> <code>{rclone_cfg}</code>\n"
-        f"<b>Leech:- </b> <code>{leen}</code>\n"
-        f"<b>Rclone:- </b> <code>{rclone}</code>\n"
-        "\n"
-        f"<b>Latest {__version__} Changelog :- </b>\n"
-        "1.DB Optimizations.\n"
-        "2.Database handling on disconnections..\n"
-        "3.Support for ARM devices.\n"
-        "4.Gdrive Support for PYTDL and YTDL\n"
-        "5.Upload YT Playlist even when some vids are errored.\n"
-        "6.Changed /server menu. Add /speedtest\n"
-        "7.Minor fixes.\n"
-        "8.Deploy takes less then 2 mins now.\n"
-        "9.MegaDL added.\n"
-        "10.Overall download and upload progress.\n"
-        "11.Pixeldrain DL support.\n"
-        "12.Alert on when the bot boots up.\n"
-        "<b>13.Fixed Heroku Stuff.</b>\n"
     )
 
     await message.reply(msg, parse_mode="html")
@@ -880,14 +857,14 @@ async def set_thumb_cmd(e):
 
     user_db.set_var("DISABLE_THUMBNAIL", False, str(e.sender_id))
     await e.reply(
-        "Thumbnail set. try using /usettings to get more control. Can be used in private too."
+        "Thumbnail set."
     )
 
 
 async def clear_thumb_cmd(e):
     user_db.set_var("DISABLE_THUMBNAIL", True, str(e.sender_id))
     await e.reply(
-        "Thumbnail disabled. Try using /usettings to get more control. Can be used in private too."
+        "Thumbnail disabled."
     )
 
 
