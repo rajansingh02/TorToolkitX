@@ -643,8 +643,7 @@ async def set_password_zip(message):
 
 
 async def start_handler(event):
-    msg = "Hello This is Imager MegaTorToolkitX running on heroku.
-    "
+    msg = "Hello This is Imager MegaTorToolkitX running on heroku."
     await event.reply(msg, parse_mode="html")
 
 
